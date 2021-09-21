@@ -7,7 +7,7 @@ The data set [1] is obtained from experiments carried out with a group of 30 vol
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. See 'features_info.txt' for more details. 
 
 For each record it is provided:
-======================================
+
 
 - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
 - Triaxial Angular velocity from the gyroscope. 
@@ -16,7 +16,7 @@ For each record it is provided:
 - An identifier of the subject who carried out the experiment.
 
 The dataset includes the following files:
-=========================================
+
 
 - 'README.txt'
 
@@ -38,47 +38,15 @@ The following files are available for the train and test data. Their description
 
 - 'train/subject_train.txt': Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. 
 
-- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
+- 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128         element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
 
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-
-
-======================================
-
-The dataset [1] was cleaned as follows:
-
-  1.- The files "subject_train.txt, "X_train.txt", "y_train.txt" and "subject_test.txt, "X_test.txt", "y_test.txt" are
-      column-bound, respectively. The "Subject" column in "subject_train.txt" is bound at the left of the first column 
-      of "X_train.txt", and the "Activity" column is bound to the right of the last column in "X_train.txt". 
-      The same applies to the "\_test.txt" files. Then, the resulting two datasets are merged into a single dataframe "*data".
   
-  2.- The indexes for the required mean and standard deviation columns for each measurement in the dataframe are
-      identified by matching the words "mean()" and "std()" in the elements of "features.txt"
-      
-  3.- The resulting indexes are matched to the indixes of the merged sigle dataframe "*data"*. Then, with the corrected indexes,
-      the desired data is extracted from the dataframe "*data*".
-      
-  4.- To the resulting "*data_mean_std"* dataframe, the values of the "Activity" column are changed to the descriptive names
-      provided in the "activity_labels.txt" as folows:
-      
-      - 1 -> Walking,
-      - 2 -> Walking upstairs,
-      - 3 -> Walking downstairs,
-      - 4 -> Sitting,
-      - 5 -> Standing,
-      - 6 -> Laying.
-       
-  5.- Next, the column names in the dataframe "*data_mean_std"* are changed to the names provided in "features.txt", and the first
-      and last columns are renamed to "Subject" and "Activity", respectively.
-      
-  6.-  Once the data set is clean and tidy, a second data set is created with the average of each variable for each activity and each subject.
   
-======================================
-  
-  The data set contains the following variables:
+The data set contains the following variables:
   
   These signals were used to estimate variables of the feature vector for each pattern:  
   '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
@@ -111,8 +79,8 @@ The dataset [1] was cleaned as follows:
   NOTE: In the data set "tidy_mean" the columns correspond to the average of the mean and standard deviation of each variable. Furthermore, the "Subject" 
         and "Activity" columns are placed in the first and second columns, respectively. 
         
-======================================
-  References
+
+References
   
   [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass 
   Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
