@@ -4,10 +4,12 @@ Cleaning of the dataset Human Activiy Recognition Using Smartphones Dataset [1].
 
 
 The script used to perform the analysis is:
+======================================
 
 - "run_analysis.R"
 
 The dataset [1] was cleaned as follows:
+======================================
 
   1.- The files "subject_train.txt, "X_train.txt", "y_train.txt" and "subject_test.txt, "X_test.txt", "y_test.txt" are
       column-bound, respectively. The "Subject" column in "subject_train.txt" is bound at the left of the first column 
@@ -38,7 +40,8 @@ The dataset [1] was cleaned as follows:
 A detailed explanation of the data and variables is given in the code book "CodeBook.mb".
 
 
-
+References
+======================================
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition 
 on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of 
 Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
