@@ -25,22 +25,29 @@ The dataset [1] was cleaned as follows:
        4 -> Sitting,
        5 -> Standing,
        6 -> Laying.
+       
+  5.- Next, the column names in the dataframe "*data_mean_std"* are changed to the names provided in "features.txt", and the first
+      and last columns are renamed to "Subject" and "Activity", respectively.
+      
+  6.-  Once the data set is clean and tidy, a second data set is created with the average of each variable for each activity and each subject.
+  
+  ------------------------------------------------------
+  ------------------------------------------------------
+
+The script used to perform the analysis is:
+
+- "run_analysis.R"
+
+With this script both tidy data sets can be obtained. The first data set is the mean and standard deviation of each measurement, where the values of
+the "Activity" column were change to a more descriptive name. Furthermore, the names of the columns were changes to the corresponding names in the 
+"features.txt" file. The second data set is obtained from the first one by computing the average of each variable for each activity and each subject.
+
+A detailed explanation of how the script works, the data used, and the variables is given in the code book "CodeBook.mb".
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+-------------------------------------------------------
+-------------------------------------------------------
+References
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition 
 on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of 
