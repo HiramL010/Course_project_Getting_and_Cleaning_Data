@@ -18,12 +18,13 @@ The dataset [1] was cleaned as follows:
       
   4.- To the resulting "*data_mean_std"* dataframe, the values of the "Activity" column are changed to the descriptive names
       provided in the "activity_labels.txt" as folows:
-       1 -> Walking,
-       2 -> Walking upstairs,
-       3 -> Walking downstairs,
-       4 -> Sitting,
-       5 -> Standing,
-       6 -> Laying.
+      
+      - 1 -> Walking,
+      - 2 -> Walking upstairs,
+      - 3 -> Walking downstairs,
+      - 4 -> Sitting,
+      - 5 -> Standing,
+      - 6 -> Laying.
        
   5.- Next, the column names in the dataframe "*data_mean_std"* are changed to the names provided in "features.txt", and the first
       and last columns are renamed to "Subject" and "Activity", respectively.
@@ -38,30 +39,37 @@ The dataset [1] was cleaned as follows:
   These signals were used to estimate variables of the feature vector for each pattern:  
   '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
 
-  tBodyAcc-XYZ
-  tGravityAcc-XYZ
-  tBodyAccJerk-XYZ
-  tBodyGyro-XYZ
-  tBodyGyroJerk-XYZ
-  tBodyAccMag
-  tGravityAccMag
-  tBodyAccJerkMag
-  tBodyGyroMag
-  tBodyGyroJerkMag
-  fBodyAcc-XYZ
-  fBodyAccJerk-XYZ
-  fBodyGyro-XYZ
-  fBodyAccMag
-  fBodyAccJerkMag
-  fBodyGyroMag
-  fBodyGyroJerkMag
+  - tBodyAcc-XYZ
+  - tGravityAcc-XYZ
+  - tBodyAccJerk-XYZ
+  - tBodyGyro-XYZ
+  - tBodyGyroJerk-XYZ
+  - tBodyAccMag
+  - tGravityAccMag
+  - tBodyAccJerkMag
+  - tBodyGyroMag
+  - tBodyGyroJerkMag
+  - fBodyAcc-XYZ
+  - fBodyAccJerk-XYZ
+  - fBodyGyro-XYZ
+  - fBodyAccMag
+  - fBodyAccJerkMag
+  - fBodyGyroMag
+  - fBodyGyroJerkMag
 
   The set of variables that were estimated from these signals are: 
 
-  mean(): Mean value
-  std(): Standard deviation
+  - mean(): Mean value
+  - std(): Standard deviation
   
-  Additionally, the first and last columns of the data set "*data_mean_std*" corresponds to the variables "Subject" and "Activity" 
+  Additionally, the first and last columns of the data set "*data_mean_std*" corresponds to the variables "Subject" and "Activity", respectively.
+  
+  NOTE: In the data set "tidy_mean" the columns correspond to the average of the mean and standard deviation of each variable. Furthermore, the "Subject" 
+        and "Activity" columns are placed in the first and second columns, respectively. 
+        
+  ------------------------------------------------
+  ------------------------------------------------
+  Reference
   
   
 
