@@ -1,8 +1,7 @@
 # Course_project_Getting_and_Cleaning_Data
 
 Cleaning of the dataset Human Activiy Recognition Using Smartphones Dataset [1].
----------------------------------------------------------------------------------------
----------------------------------------------------------------------------------------
+
 
 The script used to perform the analysis is:
 
@@ -15,9 +14,6 @@ the "Activity" column were change to a more descriptive name. Furthermore, the n
 A detailed explanation of how the script works, the data used, and the variables is given in the code book "CodeBook.mb".
 
 
--------------------------------------------------------
--------------------------------------------------------
-References
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition 
 on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of 
